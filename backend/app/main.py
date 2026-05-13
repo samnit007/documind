@@ -11,6 +11,7 @@ app.add_middleware(
         "http://localhost:5173",
         "https://documind.vercel.app",
         "https://documind-samnit007.vercel.app",
+        "https://documind-ashy.vercel.app",
     ],
     allow_origin_regex=r"https://documind.*\.vercel\.app",
     allow_methods=["*"],
