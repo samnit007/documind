@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "category": "single-source",
+    "question": "What is the difference between Claude Opus, Sonnet, and Haiku?",
+    "expected_sources": ["Anthropic"],
+    "notes": "model comparison — should pull from models overview"
+  },
+  {
+    "id": 2,
+    "category": "single-source",
+    "question": "How do I implement tool use with Claude using the Anthropic API?",
+    "expected_sources": ["Anthropic"],
+    "notes": "tool use implementation page"
+  },
+  {
+    "id": 3,
+    "category": "single-source",
+    "question": "What is chain-of-thought prompting and when should I use it?",
+    "expected_sources": ["Anthropic"],
+    "notes": "CoT page — detailed content"
+  },
+  {
+    "id": 4,
+    "category": "single-source",
+    "question": "How does batch processing work with the Anthropic API?",
+    "expected_sources": ["Anthropic"],
+    "notes": "batch processing page"
+  },
+  {
+    "id": 5,
+    "category": "single-source",
+    "question": "What embedding models does Anthropic recommend and how do I use them?",
+    "expected_sources": ["Anthropic"],
+    "notes": "embeddings page"
+  },
+  {
+    "id": 6,
+    "category": "single-source",
+    "question": "How do I manage context windows in Claude to avoid exceeding limits?",
+    "expected_sources": ["Anthropic"],
+    "notes": "context windows page"
+  },
+  {
+    "id": 7,
+    "category": "single-source",
+    "question": "How do I build a RAG agent using LangChain?",
+    "expected_sources": ["LangChain"],
+    "notes": "RAG agent tutorial"
+  },
+  {
+    "id": 8,
+    "category": "single-source",
+    "question": "What is the difference between LangGraph workflows and agents?",
+    "expected_sources": ["LangChain"],
+    "notes": "workflows-agents page"
+  },
+  {
+    "id": 9,
+    "category": "single-source",
+    "question": "How does LangGraph handle state persistence across runs?",
+    "expected_sources": ["LangChain"],
+    "notes": "persistence page"
+  },
+  {
+    "id": 10,
+    "category": "single-source",
+    "question": "How do I add streaming output to a LangGraph graph?",
+    "expected_sources": ["LangChain"],
+    "notes": "streaming page"
+  },
+  {
+    "id": 11,
+    "category": "single-source",
+    "question": "What retrieval strategies does LangChain support for RAG?",
+    "expected_sources": ["LangChain"],
+    "notes": "retrieval concepts page"
+  },
+  {
+    "id": 12,
+    "category": "single-source",
+    "question": "How do I define and register tools in a LangChain agent?",
+    "expected_sources": ["LangChain"],
+    "notes": "tools page"
+  },
+  {
+    "id": 13,
+    "category": "single-source",
+    "question": "How do I define tools in Pydantic AI and pass them to an agent?",
+    "expected_sources": ["Pydantic AI"],
+    "notes": "tools page — well covered"
+  },
+  {
+    "id": 14,
+    "category": "single-source",
+    "question": "How do dependencies work in Pydantic AI and why are they useful?",
+    "expected_sources": ["Pydantic AI"],
+    "notes": "dependencies page"
+  },
+  {
+    "id": 15,
+    "category": "single-source",
+    "question": "What structured output types does Pydantic AI support?",
+    "expected_sources": ["Pydantic AI"],
+    "notes": "output page"
+  },
+  {
+    "id": 16,
+    "category": "single-source",
+    "question": "How do I write tests for Pydantic AI agents?",
+    "expected_sources": ["Pydantic AI"],
+    "notes": "testing-evals page"
+  },
+  {
+    "id": 17,
+    "category": "single-source",
+    "question": "How do I build multi-agent systems using Pydantic AI?",
+    "expected_sources": ["Pydantic AI"],
+    "notes": "multi-agent-applications page"
+  },
+  {
+    "id": 18,
+    "category": "multi-source",
+    "question": "What are the best practices for chunking documents in a RAG pipeline?",
+    "expected_sources": ["LangChain", "Pydantic AI"],
+    "notes": "should pull from LangChain text splitters + Pydantic AI testing"
+  },
+  {
+    "id": 19,
+    "category": "multi-source",
+    "question": "How do embeddings work and which models and libraries should I use?",
+    "expected_sources": ["Anthropic", "LangChain"],
+    "notes": "Anthropic embeddings + LangChain embedding models"
+  },
+  {
+    "id": 20,
+    "category": "no-answer",
+    "question": "How do I fine-tune GPT-4 on my own dataset using the OpenAI API?",
+    "expected_sources": [],
+    "notes": "OpenAI fine-tuning — not in corpus, expect honest no-answer"
+  }
+]

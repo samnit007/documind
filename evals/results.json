@@ -1,0 +1,531 @@
+{
+  "n": 20,
+  "recall_at_5": 1.0,
+  "mrr": 1.0,
+  "faithfulness": 0.92,
+  "relevance": 0.778,
+  "avg_latency_s": 5.82,
+  "total_cost_usd": 0.0689,
+  "results": [
+    {
+      "id": 1,
+      "category": "single-source",
+      "question": "What is the difference between Claude Opus, Sonnet, and Haiku?",
+      "expected_sources": [
+        "Anthropic"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Based on the provided context, Claude Opus, Sonnet, and Haiku are different model families in Anthropic's Claude lineup, with varying capabilities and costs. The context shows they differ in: (1) Pric",
+      "faithfulness": 0.95,
+      "relevance": 0.85,
+      "faithfulness_reason": "All claims about pricing and token overhead are directly supported by the context tables; the acknowledgment that capability differences aren't included is honest and accurate.",
+      "relevance_reason": "The answer addresses the question by identifying pricing and token cost differences, but lacks information about actual capability/performance distinctions that would fully explain the differences between models.",
+      "confidence": 0.6,
+      "latency_s": 10.76,
+      "pipeline_cost_usd": 0.002897,
+      "judge_cost_usd": 0.001394
+    },
+    {
+      "id": 2,
+      "category": "single-source",
+      "question": "How do I implement tool use with Claude using the Anthropic API?",
+      "expected_sources": [
+        "Anthropic"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "To implement tool use with Claude using the Anthropic API, you call the Claude API with the `tools` parameter. When you include this parameter, the API constructs a special system prompt from your too",
+      "faithfulness": 0.95,
+      "relevance": 0.95,
+      "faithfulness_reason": "The answer is well-grounded in the context, accurately describing the tools parameter, system prompt construction, and tool execution flow, with only minor paraphrasing of the source material.",
+      "relevance_reason": "The answer directly and comprehensively addresses how to implement tool use with Claude using the Anthropic API, covering key steps and mechanisms.",
+      "confidence": 0.95,
+      "latency_s": 5.64,
+      "pipeline_cost_usd": 0.002557,
+      "judge_cost_usd": 0.001125
+    },
+    {
+      "id": 3,
+      "category": "single-source",
+      "question": "What is chain-of-thought prompting and when should I use it?",
+      "expected_sources": [
+        "Anthropic"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "LangChain",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Chain-of-thought prompting is a technique where you break complex reasoning tasks into smaller steps that the model works through sequentially. According to the documentation, it's particularly useful",
+      "faithfulness": 0.65,
+      "relevance": 0.7,
+      "faithfulness_reason": "The answer conflates chain-of-thought prompting with prompt chaining; the context discusses prompt chaining and adaptive thinking, not chain-of-thought prompting as a distinct technique, and some claims about when to use it are inferred rather than directly stated.",
+      "relevance_reason": "The answer addresses the general concept of breaking reasoning into steps and provides guidance on when to use such techniques, but doesn't clearly distinguish chain-of-thought from the related concepts actually discussed in the provided context.",
+      "confidence": 0.85,
+      "latency_s": 7.79,
+      "pipeline_cost_usd": 0.002697,
+      "judge_cost_usd": 0.001148
+    },
+    {
+      "id": 4,
+      "category": "single-source",
+      "question": "How does batch processing work with the Anthropic API?",
+      "expected_sources": [
+        "Anthropic"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Batch processing with the Anthropic API allows you to submit multiple requests together for asynchronous processing instead of handling them one at a time. This approach is particularly useful when yo",
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "faithfulness_reason": "All claims in the answer are directly supported by the provided context, including workspace isolation, independent processing, 29-day result availability, batch creation via the endpoint, and result streaming with status types.",
+      "relevance_reason": "The answer comprehensively addresses the question by explaining how batch processing works with the Anthropic API, covering its purpose, key characteristics, and operational details.",
+      "confidence": 0.95,
+      "latency_s": 7.11,
+      "pipeline_cost_usd": 0.003267,
+      "judge_cost_usd": 0.001352
+    },
+    {
+      "id": 5,
+      "category": "single-source",
+      "question": "What embedding models does Anthropic recommend and how do I use them?",
+      "expected_sources": [
+        "Anthropic"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Pydantic AI",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Anthropic does not offer its own embedding model. Instead, Anthropic recommends using Voyage AI, which provides state-of-the-art embedding models with options for customized models for specific indust",
+      "faithfulness": 0.65,
+      "relevance": 0.7,
+      "faithfulness_reason": "The answer accurately states that Anthropic doesn't offer embedding models and recommends Voyage AI, but incorrectly claims the context 'indicates multimodal embedding models are recommended' when those code snippets appear to be unrelated example code.",
+      "relevance_reason": "The answer addresses what Anthropic recommends (Voyage AI) but partially fails on the 'how to use them' aspect, as it doesn't explain how to actually integrate or use Voyage AI embeddings with Anthropic's models.",
+      "confidence": 0.7,
+      "latency_s": 8.75,
+      "pipeline_cost_usd": 0.002078,
+      "judge_cost_usd": 0.001144
+    },
+    {
+      "id": 6,
+      "category": "single-source",
+      "question": "How do I manage context windows in Claude to avoid exceeding limits?",
+      "expected_sources": [
+        "Anthropic"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "To manage context windows in Claude and avoid exceeding limits, you should:\n\n1. **Use the token counting API**: Before sending messages to Claude, use the token counting API to estimate token usage. T",
+      "faithfulness": 0.95,
+      "relevance": 1.0,
+      "faithfulness_reason": "All claims are supported by the context except for a minor inconsistency: the answer states Claude Sonnet 3.7 returns validation errors, but the context only mentions 'newer Claude models' without specifying 3.7.",
+      "relevance_reason": "The answer directly and comprehensively addresses the question about managing context windows in Claude, covering multiple practical strategies and model-specific information from the provided context.",
+      "confidence": 0.95,
+      "latency_s": 6.86,
+      "pipeline_cost_usd": 0.003469,
+      "judge_cost_usd": 0.001348
+    },
+    {
+      "id": 7,
+      "category": "single-source",
+      "question": "How do I build a RAG agent using LangChain?",
+      "expected_sources": [
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "To build a RAG agent with LangChain, you can use the `create_agent` function. LangChain provides prebuilt agent architecture and model integrations to help you get started quickly. The framework allow",
+      "faithfulness": 0.95,
+      "relevance": 0.9,
+      "faithfulness_reason": "All claims are directly supported by the context, including the use of `create_agent`, prebuilt architecture, model integrations, the 10 lines of code statement, supported providers, LangGraph for custom agents, and the tool-calling mechanism for agentic RAG.",
+      "relevance_reason": "The answer directly addresses how to build a RAG agent with LangChain by mentioning the primary method (`create_agent`) and advanced alternatives (LangGraph), making it highly relevant to the question asked.",
+      "confidence": 0.85,
+      "latency_s": 5.53,
+      "pipeline_cost_usd": 0.002705,
+      "judge_cost_usd": 0.001094
+    },
+    {
+      "id": 8,
+      "category": "single-source",
+      "question": "What is the difference between LangGraph workflows and agents?",
+      "expected_sources": [
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "The provided context does not contain specific information comparing the differences between LangGraph workflows and agents. While the context mentions that LangGraph is used for building both 'agents",
+      "faithfulness": 1.0,
+      "relevance": 0.6,
+      "faithfulness_reason": "The answer accurately states that the provided context does not contain explicit information comparing LangGraph workflows and agents, which is true based on the retrieved context.",
+      "relevance_reason": "While the answer correctly identifies a limitation, it only partially addresses the question by refusing to answer rather than extracting available information about how LangGraph relates to both workflows and agents.",
+      "confidence": 0.2,
+      "latency_s": 4.22,
+      "pipeline_cost_usd": 0.001612,
+      "judge_cost_usd": 0.001016
+    },
+    {
+      "id": 9,
+      "category": "single-source",
+      "question": "How does LangGraph handle state persistence across runs?",
+      "expected_sources": [
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "LangGraph handles state persistence through a built-in persistence layer that saves graph state as checkpoints. When you compile a graph with a checkpointer, a snapshot of the graph state is saved at ",
+      "faithfulness": 0.95,
+      "relevance": 1.0,
+      "faithfulness_reason": "All claims are directly supported by the context, including checkpoint saving at super-steps, task-level writes in the checkpoint_writes table, and the enabled use cases.",
+      "relevance_reason": "The answer comprehensively addresses the question about state persistence by explaining the mechanism (checkpoints), the persistence layers (full snapshots and task writes), and the benefits enabled.",
+      "confidence": 0.95,
+      "latency_s": 5.53,
+      "pipeline_cost_usd": 0.003074,
+      "judge_cost_usd": 0.001222
+    },
+    {
+      "id": 10,
+      "category": "single-source",
+      "question": "How do I add streaming output to a LangGraph graph?",
+      "expected_sources": [
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "To add streaming output to a LangGraph graph, use the `stream` (sync) or `astream` (async) methods that are exposed by LangGraph graphs. These methods yield streamed outputs as iterators. You can pass",
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "faithfulness_reason": "Every claim in the answer is directly supported by the provided context, which explicitly mentions the `stream` and `astream` methods, their sync/async nature, and the ability to pass stream modes.",
+      "relevance_reason": "The answer directly addresses the question by explaining how to add streaming output to a LangGraph graph using the appropriate methods and parameters.",
+      "confidence": 0.85,
+      "latency_s": 3.89,
+      "pipeline_cost_usd": 0.001942,
+      "judge_cost_usd": 0.000985
+    },
+    {
+      "id": 11,
+      "category": "single-source",
+      "question": "What retrieval strategies does LangChain support for RAG?",
+      "expected_sources": [
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "LangChain supports two main retrieval strategies for RAG:\n\n1. **RAG Agents**: These execute searches with simple tools and allow the LLM to use its discretion in generating tool calls to help answer u",
+      "faithfulness": 0.95,
+      "relevance": 1.0,
+      "faithfulness_reason": "The answer accurately reflects the context provided, including the two main strategies (RAG agents and RAG chains), their characteristics, and mentions of LangGraph implementation options.",
+      "relevance_reason": "The answer directly addresses the question about retrieval strategies LangChain supports for RAG by identifying and explaining the two main approaches mentioned in the context.",
+      "confidence": 0.9,
+      "latency_s": 5.21,
+      "pipeline_cost_usd": 0.002683,
+      "judge_cost_usd": 0.001047
+    },
+    {
+      "id": 12,
+      "category": "single-source",
+      "question": "How do I define and register tools in a LangChain agent?",
+      "expected_sources": [
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "The context provides limited information about defining and registering tools in LangChain agents. It mentions that tools are used by agents (created via `create_agent`) and shows a Python import exam",
+      "faithfulness": 0.95,
+      "relevance": 0.4,
+      "faithfulness_reason": "The answer accurately represents what the context contains, including the import statement and references to additional documentation, with only minor inaccuracy about 'limited information' when the context actually provides some foundational details.",
+      "relevance_reason": "While the answer correctly identifies that the context lacks detailed implementation steps, it does not provide the user with actionable guidance on how to define and register tools, which was the core question asked.",
+      "confidence": 0.3,
+      "latency_s": 4.71,
+      "pipeline_cost_usd": 0.00235,
+      "judge_cost_usd": 0.001198
+    },
+    {
+      "id": 13,
+      "category": "single-source",
+      "question": "How do I define tools in Pydantic AI and pass them to an agent?",
+      "expected_sources": [
+        "Pydantic AI"
+      ],
+      "retrieved_sources": [
+        "Pydantic AI",
+        "LangChain",
+        "Pydantic AI",
+        "Pydantic AI",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "In Pydantic AI, you define tools using the `@agent.tool` decorator to register functions that the LLM may call while responding to a user. Here's how it works:\n\n1. **Define tool functions**: Create re",
+      "faithfulness": 0.7,
+      "relevance": 0.75,
+      "faithfulness_reason": "The answer accurately describes using @agent.tool decorator and most details about validation, docstrings, and return types are supported by context, but the answer conflates two different methods for defining tools without clearly addressing the static tools approach mentioned in the context.",
+      "relevance_reason": "The answer partially addresses the question by explaining how to define tools with @agent.tool, but incompletely addresses 'passing them to an agent' - the context mentions passing a list of tools when creating the agent for static tools, which is not covered in the answer.",
+      "confidence": 0.95,
+      "latency_s": 5.76,
+      "pipeline_cost_usd": 0.002962,
+      "judge_cost_usd": 0.001442
+    },
+    {
+      "id": 14,
+      "category": "single-source",
+      "question": "How do dependencies work in Pydantic AI and why are they useful?",
+      "expected_sources": [
+        "Pydantic AI"
+      ],
+      "retrieved_sources": [
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Pydantic AI uses a dependency injection system to provide data and services to your agent's system prompts, tools, and output validators. Dependencies are useful because they follow existing Python be",
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "faithfulness_reason": "Every claim in the answer is directly supported by the provided context, including the definition of the dependency injection system, where it's used, and the specific benefits listed.",
+      "relevance_reason": "The answer fully addresses both parts of the question by explaining how dependencies work in Pydantic AI and clearly stating why they are useful.",
+      "confidence": 0.95,
+      "latency_s": 4.24,
+      "pipeline_cost_usd": 0.001843,
+      "judge_cost_usd": 0.001153
+    },
+    {
+      "id": 15,
+      "category": "single-source",
+      "question": "What structured output types does Pydantic AI support?",
+      "expected_sources": [
+        "Pydantic AI"
+      ],
+      "retrieved_sources": [
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "The provided context does not contain specific information about which structured output types Pydantic AI supports. The documentation mentions that Pydantic AI uses the model's tool calling capabilit",
+      "faithfulness": 1.0,
+      "relevance": 0.3,
+      "faithfulness_reason": "The answer accurately reflects that the retrieved context does not contain specific details about supported structured output types.",
+      "relevance_reason": "While technically accurate about the context's limitations, the answer fails to address the question by not attempting to infer or provide any information about what output types might be supported based on the available context.",
+      "confidence": 0.3,
+      "latency_s": 4.92,
+      "pipeline_cost_usd": 0.001736,
+      "judge_cost_usd": 0.001141
+    },
+    {
+      "id": 16,
+      "category": "single-source",
+      "question": "How do I write tests for Pydantic AI agents?",
+      "expected_sources": [
+        "Pydantic AI"
+      ],
+      "retrieved_sources": [
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Writing unit tests for Pydantic AI code follows standard Python testing practices. The recommended strategy is to: 1) Use pytest as your test harness, 2) Use inline-snapshot for long assertions, and 3",
+      "faithfulness": 0.85,
+      "relevance": 0.9,
+      "faithfulness_reason": "The answer accurately reflects the context about pytest, inline-snapshot, and Pydantic Evals, but incompletely addresses dirty-equals (mentioned in context but not explained in the answer).",
+      "relevance_reason": "The answer directly addresses the question about writing tests for Pydantic AI agents by providing concrete tools and strategies mentioned in the documentation.",
+      "confidence": 0.9,
+      "latency_s": 4.78,
+      "pipeline_cost_usd": 0.001908,
+      "judge_cost_usd": 0.001042
+    },
+    {
+      "id": 17,
+      "category": "single-source",
+      "question": "How do I build multi-agent systems using Pydantic AI?",
+      "expected_sources": [
+        "Pydantic AI"
+      ],
+      "retrieved_sources": [
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Pydantic AI supports building multi-agent systems through five levels of complexity:\n\n1. **Single agent workflows** \u2014 the foundational level covered in most documentation\n2. **Agent delegation** \u2014 age",
+      "faithfulness": 0.95,
+      "relevance": 0.9,
+      "faithfulness_reason": "All claims are directly supported by the context except 'Deep Agents' is listed without explanation, and the answer assumes flight booking is a multi-agent example when context only mentions it exists.",
+      "relevance_reason": "The answer directly addresses how to build multi-agent systems by explaining the five complexity levels and relevant supporting features, though it lacks specific implementation details or code examples.",
+      "confidence": 0.85,
+      "latency_s": 7.17,
+      "pipeline_cost_usd": 0.002803,
+      "judge_cost_usd": 0.001146
+    },
+    {
+      "id": 18,
+      "category": "multi-source",
+      "question": "What are the best practices for chunking documents in a RAG pipeline?",
+      "expected_sources": [
+        "LangChain",
+        "Pydantic AI"
+      ],
+      "retrieved_sources": [
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain",
+        "LangChain"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "The provided context does not contain information about best practices for chunking documents in a RAG pipeline. The context discusses different RAG architectures (2-Step RAG, Hybrid RAG, and Agentic ",
+      "faithfulness": 1.0,
+      "relevance": 0.0,
+      "faithfulness_reason": "The answer accurately reflects that the provided context does not contain information about document chunking best practices.",
+      "relevance_reason": "While the answer is truthful about the context's limitations, it does not attempt to address the question asked and instead merely explains what information is missing.",
+      "confidence": 0.0,
+      "latency_s": 3.9,
+      "pipeline_cost_usd": 0.001106,
+      "judge_cost_usd": 0.000921
+    },
+    {
+      "id": 19,
+      "category": "multi-source",
+      "question": "How do embeddings work and which models and libraries should I use?",
+      "expected_sources": [
+        "Anthropic",
+        "LangChain"
+      ],
+      "retrieved_sources": [
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic",
+        "Anthropic"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "Text embeddings are numerical representations of text that enable measuring semantic similarity. They can be used for tasks like search, recommendations, and anomaly detection.\n\nFor general-purpose em",
+      "faithfulness": 0.95,
+      "relevance": 0.6,
+      "faithfulness_reason": "All claims in the answer are directly supported by the retrieved context; the answer accurately presents the embedding definition, recommended models, and input_type parameter guidance.",
+      "relevance_reason": "The answer addresses part of the question (which models to use) but fails to adequately address the first part (how embeddings work) and doesn't provide information about libraries, leaving the question only partially answered.",
+      "confidence": 0.6,
+      "latency_s": 5.63,
+      "pipeline_cost_usd": 0.002412,
+      "judge_cost_usd": 0.000991
+    },
+    {
+      "id": 20,
+      "category": "no-answer",
+      "question": "How do I fine-tune GPT-4 on my own dataset using the OpenAI API?",
+      "expected_sources": [],
+      "retrieved_sources": [
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI",
+        "Pydantic AI"
+      ],
+      "recall_at_5": 1.0,
+      "mrr": 1.0,
+      "answer_preview": "The provided context does not contain information about fine-tuning GPT-4 on custom datasets using the OpenAI API. The context only shows basic Agent initialization examples using Pydantic AI with the",
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "faithfulness_reason": "no-answer case \u2014 checked for honest refusal",
+      "relevance_reason": "no-answer case \u2014 checked for honest refusal",
+      "confidence": 0.95,
+      "latency_s": 4.05,
+      "pipeline_cost_usd": 0.000858,
+      "judge_cost_usd": 0.0
+    }
+  ]
+}

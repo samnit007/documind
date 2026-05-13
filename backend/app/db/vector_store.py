@@ -55,6 +55,18 @@ def similarity_search(embedding: list[float], k: int = 5) -> list[DocumentChunk]
         return results
 
 
+def similarity_search_with_scores(embedding: list[float], k: int = 5) -> list[tuple[DocumentChunk, float]]:
+    distance = DocumentChunk.embedding.cosine_distance(embedding).label("distance")
+    with Session(engine) as session:
+        rows = (
+            session.query(DocumentChunk, distance)
+            .order_by(distance)
+            .limit(k)
+            .all()
+        )
+        return [(chunk, 1.0 - float(dist)) for chunk, dist in rows]
+
+
 def chunk_count() -> int:
     with Session(engine) as session:
         return session.query(DocumentChunk).count()
