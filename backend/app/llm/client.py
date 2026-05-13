@@ -44,12 +44,38 @@ class OpenAIClient(LLMClient):
         return response.choices[0].message.content, cost
 
 
+class OllamaClient(LLMClient):
+    """Local Ollama — zero API cost. Set OLLAMA_BASE_URL if not localhost."""
+
+    def __init__(self):
+        import os
+        self.base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+        self.model = os.getenv("OLLAMA_MODEL", "qwen2.5:7b")
+
+    async def complete(self, system: str, user: str, model: Optional[str] = None) -> tuple[str, float]:
+        import httpx
+        payload = {
+            "model": model or self.model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            "stream": False,
+        }
+        async with httpx.AsyncClient(timeout=120) as client:
+            resp = await client.post(f"{self.base_url}/api/chat", json=payload)
+            resp.raise_for_status()
+        return resp.json()["message"]["content"], 0.0
+
+
 def get_llm_client(provider: Optional[str] = None) -> LLMClient:
     provider = provider or settings.default_llm
     if provider == "claude":
         return ClaudeClient()
     if provider == "openai":
         return OpenAIClient()
+    if provider == "ollama":
+        return OllamaClient()
     raise ValueError(f"Unknown LLM provider: {provider}")
 
 
