@@ -1,0 +1,29 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# LLM clients
+anthropic>=0.34.0
+openai>=1.40.0
+
+# RAG / vector
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+pgvector>=0.3.0
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.0
+
+# Document ingestion
+beautifulsoup4>=4.12.0
+httpx>=0.27.0
+tiktoken>=0.7.0
+
+# Evals (added Week 3)
+# ragas>=0.2.0
+
+# Dev
+python-dotenv>=1.0.0
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
