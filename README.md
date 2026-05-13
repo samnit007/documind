@@ -4,6 +4,15 @@
 
 **Live demo:** [documind-ashy.vercel.app](https://documind-ashy.vercel.app)
 
+## Screenshots
+
+![Empty state](docs/screenshots/empty-state.png)
+
+![Answer with citations](docs/screenshots/answer-with-citations.png)
+
+![Honest refusal on out-of-corpus question](docs/screenshots/honest-refusal.png)
+
+
 ## Problem
 
 AI tooling docs are fragmented across multiple sites. Developers waste time cross-referencing Anthropic, LangChain, and Pydantic AI documentation while building. DocuMind indexes the combined corpus (1,699 chunks across 29 pages) and answers questions with cited, validated responses — so you stay in flow.
