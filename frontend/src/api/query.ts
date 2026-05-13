@@ -1,6 +1,6 @@
 import type { RAGResponse, Provider } from '../types'
 
-const BASE = '/api'
+const BASE = (import.meta.env.VITE_API_URL ?? '') + '/api'
 
 export async function askQuestion(question: string, provider: Provider): Promise<RAGResponse> {
   const res = await fetch(`${BASE}/query`, {

@@ -7,7 +7,12 @@ app = FastAPI(title="DocuMind API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://documind.vercel.app"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://documind.vercel.app",
+        "https://documind-samnit007.vercel.app",
+    ],
+    allow_origin_regex=r"https://documind.*\.vercel\.app",
     allow_methods=["*"],
     allow_headers=["*"],
 )
